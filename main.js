@@ -4,7 +4,7 @@ const path = require('path');
 const { create } = require('domain');
 
 //Set env
-//process.env.NODE_ENV = 'production'
+process.env.NODE_ENV = 'production'
 
 const {app, BrowserWindow, Menu} = electron;
 
@@ -46,7 +46,6 @@ function createServer() {
     })
     server.on('close', code => {
         console.log('Server exited with code ' + code)
-        //app.quit()
     })
 }
 
