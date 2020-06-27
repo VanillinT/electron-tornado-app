@@ -26,7 +26,6 @@ const getScriptPath = () => {
     return path.join(__dirname, PY_MODULE_NAME + '.py')
   }
   if (process.platform === 'win32') {
-    console.log(path.join(__dirname, PY_DIST_FOLDER, PY_MODULE_NAME, PY_MODULE_NAME + '.exe'))
     return path.join(__dirname, PY_DIST_FOLDER, PY_MODULE_NAME, PY_MODULE_NAME + '.exe')
   }
   return path.join(__dirname, PY_DIST_FOLDER, PY_MODULE_NAME, PY_MODULE_NAME)
